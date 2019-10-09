@@ -2,6 +2,9 @@
 -- Database: `testing`
 --
 
+CREATE DATABASE testing;
+USE testing;
+
 -- --------------------------------------------------------
 
 --
@@ -33,3 +36,6 @@ ALTER TABLE `tbl_sample`
 --
 ALTER TABLE `tbl_sample`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+INSERT INTO testing.tbl_sample (first_name, last_name)
+VALUES ('Fabiana', 'Pereira');
